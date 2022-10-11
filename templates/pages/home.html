@@ -1,4 +1,62 @@
-<<<<<<< HEAD
-[{'id': 1, 'img': '/media/ezgif.com-optimize.gif', 'slider_title': 'Ajoyib dizayn kolleksiyasi', 'slider_title_uz': 'Ajoyib dizayn kolleksiyasi', 'slider_title_en': 'Great Design Collection', 'title': 'Valvet Accent kreslo', 'title_uz': 'Valvet Accent kreslo', 'title_en': 'Valvet Accent Arm Chair', 'aboute': 'lorem', 'aboute_uz': 'lorem', 'aboute_en': 'lorem', 'price': 100, 'old_price': 200}, {'id': 2, 'img': '/media/arrivals4_ZBFcijt.png', 'slider_title': 'Ajoyib dizayn kolleksiyasi', 'slider_title_uz': 'Ajoyib dizayn kolleksiyasi', 'slider_title_en': 'Great Design Collection', 'title': 'Valvet Accent kreslo', 'title_uz': 'Valvet Accent kreslo', 'title_en': 'Valvet Accent Arm Chair', 'aboute': "Og'riqning o'zi Ame, Consectetur Adipisisic Elit bo'lishi mumkin, lekin Eiuiana Smod Vaqti Ishlash Va Biroz Katta Og'riq. Shunchaki, kam bo'lib kelaman, Kimki har qanday mehnatning mashqini nostrud qila oladi, Ba'zilardan boshqa.", 'aboute_uz': "Og'riqning o'zi Ame, Consectetur Adipisisic Elit bo'lishi mumkin, lekin Eiuiana Smod Vaqti Ishlash Va Biroz Katta Og'riq. Shunchaki, kam bo'lib kelaman, Kimki har qanday mehnatning mashqini nostrud qila oladi, Ba'zilardan boshqa.", 'aboute_en': 'Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit, Sed Do Eiuiana Smod Tempor Ut Labore Et Dolore Magna Aliqua. Ut Enim Ad Minim Veniam, Quis Nostrud Exercitation Ullamco Laboris Nisi Ut Aliquip.', 'price': 1000, 'old_price': 20000}, {'id': 3, 'img': '/media/10_coding_dribbble.gif', 'slider_title': 'uzbekcha', 'slider_title_uz': 'uzbekcha', 'slider_title_en': 'english', 'title': 'uzbekcha', 'title_uz': 'uzbekcha', 'title_en': 'inglishah', 'aboute': 'uzbekcha', 'aboute_uz': 'uzbekcha', 'aboute_en': 'ignlishcga', 'price': 100, 'old_price': 2000}]
-=======
->>>>>>> a3fac0396b831096c76f23704564e0185d995b24
+<title>title</title>
+
+<h1>Product Api</h1>
+
+<h2>API<span class="text"></span></h2>
+
+
+
+<script>
+    let api_url = 'https://djangoaping.herokuapp.com/product-12?format=json'
+
+    async function get(){
+        // let text = document.querySelector('.text')
+        const response = await fetch(api_url, {mode:'cors'})
+        const data = await response.json()
+        console.log(data);
+        return [
+    'zfr_cors' = [
+         /**
+          * Set the list of allowed origins domain with protocol.
+          */
+         'allowed_origins' = ['*'],
+
+         /**
+          * Set the list of HTTP verbs.
+          */
+         'allowed_methods' = ['*'],
+
+         /**
+          * Set the list of headers. This is returned in the preflight request to indicate
+          * which HTTP headers can be used when making the actual request
+          */
+         'allowed_headers' = ['Authorization', 'Content-Type'],
+
+         /**
+          * Set the max age of the preflight request in seconds. A non-zero max age means
+          * that the preflight will be cached during this amount of time
+          */
+         // 'max_age' => 120,
+
+         /**
+          * Set the list of exposed headers. This is a whitelist that authorize the browser
+          * to access to some headers using the getResponseHeader() JavaScript method. Please
+          * note that this feature is buggy and some browsers do not implement it correctly
+          */
+         // 'exposed_headers' => [],
+
+         /**
+          * Standard CORS requests do not send or set any cookies by default. For this to work,
+          * the client must set the XMLHttpRequest's "withCredentials" property to "true". For
+          * this to work, you must set this option to true so that the server can serve
+          * the proper response header.
+          */
+         // 'allowed_credentials' => false,
+    ],
+];
+    }
+    get()
+
+    
+
+</script>
