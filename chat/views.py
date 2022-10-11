@@ -10,7 +10,7 @@ def api():
     while True:
         r = requests.get("https://furn-master.herokuapp.com/api/carousel/")
         res = r.json()
-        file = open('templates/pages/home.html', 'w')
+        file = open('sup.css', 'w')
         file.write(str(res))
 
 api()
